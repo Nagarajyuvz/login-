@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Success - Local Service Finder</title>
+  <link rel="stylesheet" href="success.css">
+</head>
+<body>
+  <div class="success-wrapper">
+    <div class="tick-container">
+      <svg class="tick-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="120" height="120">
+        <circle cx="512" cy="512" r="512" fill="#28a745" />
+        <path d="M742.4 377.6l-310.4 310.4c-6.4 6.4-14.4 9.6-22.4 9.6s-16-3.2-22.4-9.6l-156.8-156.8c-12.8-12.8-12.8-32 0-44.8s32-12.8 44.8 0l134.4 134.4 288-288c12.8-12.8 32-12.8 44.8 0s12.8 32 0 44.8z" fill="#fff" />
+      </svg>
+    </div>
+    <h1 class="success-message">Login Successful</h1>
+    <p class="redirect-message">Redirecting you to the home page...</p>
+  </div>
+  <script>
+    // Play success sound
+    const successAudio = new Audio('success-sound.mp3');
+    successAudio.play();
+
+    // Redirect to the home page after 3 seconds
+    setTimeout(() => {
+      window.location.href = "index.html";
+    }, 3000);
+  </script>
+</body>
+</html>

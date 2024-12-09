@@ -1,0 +1,79 @@
+/* Success Page Styling */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(to bottom right, #28a745, #6c63ff); */
+    background-image: url('https://utilityanalytics.com/wp-content/uploads/2021/03/Change-is-now.jpg');
+    color: white;
+    text-align: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Wrapper */
+  .success-wrapper {
+    text-align: center;
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  /* Tick Icon */
+  .tick-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    animation: popIn 0.5s ease-out forwards;
+  }
+  
+  .tick-icon {
+    animation: scaleUp 1s ease-out forwards;
+  }
+  
+  /* Success Message */
+  .success-message {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .redirect-message {
+    font-size: 16px;
+    opacity: 0.9;
+  }
+  
+  /* Animations */
+  @keyframes scaleUp {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes popIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
